@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un Regalo Para Ti, Mi Amor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            background-color: #FFF8F9; /* Un rosa muy pálido */
+        }
+        .font-dancing-script {
+            font-family: 'Dancing Script', cursive;
+        }
+        /* Animación de corazón latiendo */
+        .heartbeat {
+            animation: heartbeat 1.5s ease-in-out infinite both;
+        }
+        @keyframes heartbeat {
+            from {
+                transform: scale(1);
+                transform-origin: center center;
+                animation-timing-function: ease-out;
+            }
+            10% {
+                transform: scale(0.91);
+                animation-timing-function: ease-in;
+            }
+            17% {
+                transform: scale(0.98);
+                animation-timing-function: ease-out;
+            }
+            33% {
+                transform: scale(0.87);
+                animation-timing-function: ease-in;
+            }
+            45% {
+                transform: scale(1);
+                animation-timing-function: ease-out;
+            }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Contenedor Principal -->
+    <div class="container mx-auto p-4 md:p-8 max-w-4xl">
+
+        <!-- Encabezado -->
+        <header class="text-center my-8">
+            <h1 class="font-dancing-script text-5xl md:text-7xl text-rose-500">Para Leimy, el Amor de Mi Vida</h1>
+            <p class="text-rose-400 mt-2 text-lg">Un pequeño rincón de nuestro mundo</p>
+        </header>
+
+        <!-- Carta de Amor -->
+        <main class="bg-white rounded-lg shadow-lg p-6 md:p-10 my-8">
+            <div class="text-center mb-6">
+                <svg class="w-12 h-12 text-rose-400 mx-auto heartbeat" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+            </div>
+            
+            <h2 class="font-dancing-script text-4xl text-rose-500 mb-6 text-center">Mi Carta Para Ti, Leimy</h2>
+
+            <p class="text-lg leading-relaxed mb-4">
+                Mi amor,
+            </p>
+            <p class="text-lg leading-relaxed mb-4">
+                Hoy quería regalarte algo diferente, un lugar que fuera solo nuestro. A veces busco las palabras perfectas para decirte todo lo que siento, pero me doy cuenta de que no existen. ¿Cómo podría una simple palabra describir la forma en que iluminas mi mundo?
+            </p>
+            <p class="text-lg leading-relaxed mb-4">
+                Nuestra historia comenzó un día mágico, un 25 de diciembre que se convirtió en mi Navidad para siempre. Desde ese momento, cada día a tu lado ha sido el mejor regalo. Pienso en todos nuestros momentos juntos: las risas, los abrazos que lo curan todo, y hasta el sabor de un helado compartido. Cada uno de esos recuerdos es un tesoro para mí.
+            </p>
+            <p class="text-lg leading-relaxed mb-4">
+                Admiro todo de ti: tu fuerza, tu inteligencia, tu increíble talento para crear cosas asombrosas y, sobre todo, tu corazón tan bueno. Eres la casualidad más bonita que me ha pasado en la vida.
+            </p>
+            <p class="text-lg leading-relaxed font-semibold text-right mt-6">
+                Con todo mi amor, siempre tuyo.
+            </p>
+        </main>
+
+        <!-- Galería de Recuerdos -->
+        <section class="my-12">
+            <h2 class="font-dancing-script text-4xl text-rose-500 mb-6 text-center">Nuestros Recuerdos</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- Puedes reemplazar estas imágenes con las tuyas -->
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="WhatsApp Image 2025-09-07 at 1.16.11 PM (1).jpeg" alt="Recuerdo de un viaje" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="WhatsApp Image 2025-09-07 at 1.16.11 PM.jpeg" alt="Recuerdo de un día especial" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="WhatsApp Image 2025-09-07 at 1.32.46 PM.jpeg" alt="Recuerdo de un momento divertido" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300">
+                </div>
+                
+                
+            </div>
+        </section>
+
+        <!-- Pequeño Juego -->
+        <section class="bg-white rounded-lg shadow-lg p-6 md:p-10 my-12 text-center">
+            <h2 class="font-dancing-script text-4xl text-rose-500 mb-4">¿Qué Tanto Me Conoces?</h2>
+            <p class="mb-6 text-lg">Un pequeño juego para mi persona favorita.</p>
+            
+            <div id="quiz-container">
+                <button id="start-btn" class="bg-rose-500 text-white font-bold py-3 px-8 rounded-full hover:bg-rose-600 transition-colors duration-300 text-lg shadow-md">
+                    ¡A Jugar!
+                </button>
+                
+                <div id="quiz-content" class="hidden">
+                    <div id="question" class="text-2xl font-semibold mb-6"></div>
+                    <div id="options" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <!-- Las opciones se generarán aquí -->
+                    </div>
+                </div>
+
+                <div id="result" class="hidden text-center p-6 bg-rose-100 rounded-lg">
+                    <h3 class="font-dancing-script text-4xl text-rose-600 mb-4">¡Juego Terminado!</h3>
+                    <p class="text-xl">No importa la puntuación, porque cada momento que paso contigo es perfecto y un tesoro para mí. ¡Gracias por ser tú!</p>
+                    <p class="text-3xl mt-4">💖 ¡Te Amo! 💖</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pie de página -->
+        <footer class="text-center py-8 text-rose-400">
+            <p>Hecho con todo mi amor, solo para ti.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const startBtn = document.getElementById('start-btn');
+        const quizContent = document.getElementById('quiz-content');
+        const questionEl = document.getElementById('question');
+        const optionsEl = document.getElementById('options');
+        const resultEl = document.getElementById('result');
+
+        // Edita estas preguntas para que sean sobre ustedes
+        const questions = [
+            {
+                question: '¿En qué fecha especial y mágica comenzamos nuestra historia?',
+                options: ['14 de Febrero', 'En tu cumpleaños', '25 de Diciembre', 'Un día de verano'],
+                answer: 2
+            },
+            {
+                question: 'Si quisieras prepararme una cena perfecta, ¿cuál de estos platos me haría más feliz?',
+                options: ['Pizza y refresco', 'Moro con carne frita', 'Una ensalada ligera', 'Sushi'],
+                answer: 1
+            },
+            {
+                question: 'Además de pasar tiempo contigo, ¿cuál es uno de mis hobbies favoritos?',
+                options: ['Leer novelas', 'Pintar paisajes', 'Ver series todo el día', 'Programar y crear cosas increíbles'],
+                answer: 3
+            },
+            {
+                question: '¿Y cuál es mi postre favorito para endulzar el día?',
+                options: ['Un rico helado', 'Pastel de chocolate', 'Frutas frescas', 'Galletas con chispas'],
+                answer: 0
+            }
+        ];
+
+        let currentQuestionIndex = 0;
+        let score = 0;
+
+        startBtn.addEventListener('click', startGame);
+
+        function startGame() {
+            startBtn.classList.add('hidden');
+            resultEl.classList.add('hidden');
+            quizContent.classList.remove('hidden');
+            currentQuestionIndex = 0;
+            score = 0;
+            showQuestion();
+        }
+
+        function showQuestion() {
+            const currentQuestion = questions[currentQuestionIndex];
+            questionEl.innerText = currentQuestion.question;
+            optionsEl.innerHTML = '';
+
+            currentQuestion.options.forEach((option, index) => {
+                const button = document.createElement('button');
+                button.innerText = option;
+                button.classList.add('bg-rose-200', 'text-rose-800', 'p-4', 'rounded-lg', 'hover:bg-rose-300', 'transition-colors', 'duration-300', 'w-full');
+                button.addEventListener('click', () => selectAnswer(index));
+                optionsEl.appendChild(button);
+            });
+        }
+
+        function selectAnswer(selectedIndex) {
+            const correct = selectedIndex === questions[currentQuestionIndex].answer;
+            if (correct) {
+                score++;
+            }
+            
+            // Efecto visual para la respuesta
+            const buttons = optionsEl.querySelectorAll('button');
+            buttons.forEach((button, index) => {
+                if (index === questions[currentQuestionIndex].answer) {
+                    button.classList.remove('bg-rose-200');
+                    button.classList.add('bg-green-300', 'text-green-800');
+                } else if (index === selectedIndex && !correct) {
+                     button.classList.remove('bg-rose-200');
+                    button.classList.add('bg-red-300', 'text-red-800');
+                }
+                button.disabled = true;
+            });
+            
+            setTimeout(() => {
+                 currentQuestionIndex++;
+                if (currentQuestionIndex < questions.length) {
+                    showQuestion();
+                } else {
+                    showResult();
+                }
+            }, 1500); // Espera 1.5 segundos antes de la siguiente pregunta
+        }
+
+        function showResult() {
+            quizContent.classList.add('hidden');
+            resultEl.classList.remove('hidden');
+            // Personalizar el mensaje final basado en la puntuación
+            const resultText = resultEl.querySelector('p');
+            if (score === questions.length) {
+                 resultText.innerHTML = `¡Wow, increíble! Acertaste todas. Me conoces mejor que nadie.<br>¡Gracias por ser la mejor parte de mi vida!`;
+            } else {
+                 resultText.innerHTML = `¡Lo hiciste genial! Pero la puntuación no importa, porque cada día que paso contigo aprendemos algo nuevo del otro. <br>¡Gracias por ser tú!`;
+            }
+
+        }
+
+    </script>
+</body>
+</html>
+
